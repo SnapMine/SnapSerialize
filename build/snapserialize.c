@@ -14,7 +14,7 @@ PHP_MINIT_FUNCTION(snapserialize) {
     return SUCCESS;
 }
 
-zend_module_entry ext_module_entry = {STANDARD_MODULE_HEADER,
+zend_module_entry snapserialize_module_entry = {STANDARD_MODULE_HEADER,
                                          "snapserialize",
                                          ext_functions,             /* Functions */
                                          PHP_MINIT(snapserialize),  /* MINIT */
