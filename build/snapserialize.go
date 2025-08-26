@@ -1,14 +1,21 @@
-package main
+package snapserialize
 
-import (
-	"C"
-	"strings"
-	"unsafe"
+/*
+#include <stdlib.h>
+#include "snapserialize.h"
+*/
+import "C"
+import _ "runtime/cgo"
+import "strings"
+import "unsafe"
+import "github.com/dunglas/frankenphp"
 
-	"github.com/dunglas/frankenphp"
-)
+func init() {
+	frankenphp.RegisterExtension(unsafe.Pointer(&C.ext_module_entry))
+}
 
-//export_php:function repeat_this(string $str, int $count, bool $reverse): string
+
+//export repeat_this
 func repeat_this(s *C.zend_string, count int64, reverse bool) unsafe.Pointer {
 	str := frankenphp.GoString(unsafe.Pointer(s))
 
