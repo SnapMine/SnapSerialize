@@ -5,7 +5,6 @@ package snapserialize
 #include "snapserialize.h"
 */
 import "C"
-import _ "runtime/cgo"
 import "strings"
 import "unsafe"
 import "github.com/dunglas/frankenphp"
