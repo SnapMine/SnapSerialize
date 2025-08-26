@@ -25,7 +25,7 @@ zend_module_entry snapserialize_module_entry = {STANDARD_MODULE_HEADER,
                                          "1.0.0",                   /* Version */
                                          STANDARD_MODULE_PROPERTIES};
 
-PHP_FUNCTION(Snap_Serializer_serializer_version)
+PHP_FUNCTION(serializer_version)
 {
     if (zend_parse_parameters_none() == FAILURE) {
         RETURN_THROWS();
