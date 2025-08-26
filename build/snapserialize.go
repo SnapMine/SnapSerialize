@@ -1,7 +1,10 @@
 package snapserialize
 
 /*
+#cgo CFLAGS: -D_GNU_SOURCE -I${SRCDIR}
+#cgo LDFLAGS:
 #include <stdlib.h>
+#include "snapserialize.h"
 #include "snapserialize.h"
 */
 import "C"
