@@ -1,4 +1,4 @@
-# main Extension
+# snapserialize Extension
 
 Auto-generated PHP extension from Go code.
 

@@ -1,5 +1,5 @@
 // export_php:namespace Snap\Serializer
-package ext_snapserialize
+package main
 
 import (
 	"C"

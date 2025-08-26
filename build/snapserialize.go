@@ -1,8 +1,8 @@
-package main
+package snapserialize
 
 /*
 #include <stdlib.h>
-#include "main.h"
+#include "snapserialize.h"
 */
 import "C"
 import "runtime/cgo"

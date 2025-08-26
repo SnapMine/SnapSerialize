@@ -1,5 +1,5 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef _SNAPSERIALIZE_H
+#define _SNAPSERIALIZE_H
 
 #include <php.h>
 #include <stdint.h>

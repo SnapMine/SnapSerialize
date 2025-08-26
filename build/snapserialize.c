@@ -4,20 +4,20 @@
 #include <Zend/zend_types.h>
 #include <stddef.h>
 
-#include "main.h"
-#include "main_arginfo.h"
+#include "snapserialize.h"
+#include "snapserialize_arginfo.h"
 #include "_cgo_export.h"
 
 
-PHP_MINIT_FUNCTION(main) {
+PHP_MINIT_FUNCTION(snapserialize) {
     
     return SUCCESS;
 }
 
-zend_module_entry main_module_entry = {STANDARD_MODULE_HEADER,
-                                         "main",
+zend_module_entry snapserialize_module_entry = {STANDARD_MODULE_HEADER,
+                                         "snapserialize",
                                          ext_functions,             /* Functions */
-                                         PHP_MINIT(main),  /* MINIT */
+                                         PHP_MINIT(snapserialize),  /* MINIT */
                                          NULL,                      /* MSHUTDOWN */
                                          NULL,                      /* RINIT */
                                          NULL,                      /* RSHUTDOWN */
